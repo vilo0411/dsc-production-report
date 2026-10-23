@@ -1203,7 +1203,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
  }
  // One part of the report at a time: the top bar switches pages, links like #news open that page.
  const pages=[...new Set(qa('.page').map(p=>p.dataset.page))];
- const pageOf=h=>{const id=h.replace('#','');if(pages.includes(id))return id;const el=id&&document.getElementById(id);return el?.closest('.page')?.dataset.page||pages[0]};
+ const pageOf=h=>{const id=h.replace('#','');if(pages.includes(id))return id;const el=id?document.getElementById(id):null;return el?.closest('.page')?.dataset.page||pages[0]};
  function go(h,scroll=true){
   const id=pageOf(h);
   qa('.page').forEach(p=>p.classList.toggle('on',p.dataset.page===id));
