@@ -42,7 +42,7 @@ details.how{background:var(--surface-alt);padding:12px 16px;margin:12px 0;font-s
 .tt-av{width:34px;height:34px;border-radius:50%;background:#272d2b;border:2px solid #fff;display:grid;place-items:center}.tt-av img{width:24px}
 .tt-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;opacity:.85;transition:opacity .2s}.tt-play svg{width:100%;height:100%;fill:rgba(255,255,255,.9);filter:drop-shadow(0 1px 3px rgba(0,0,0,.5))}.tt.playing .tt-play{opacity:0}
 .tt-bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.3)}.tt-bar i{display:block;height:100%;width:0;background:#fff}
-.vs{display:flex;flex-wrap:wrap;justify-content:center;gap:48px;margin:16px 0 8px}.side{margin:0;display:flex;flex-direction:column;gap:10px;width:400px;max-width:100%}.side .f916{max-width:400px}.side figcaption{font-size:14px;min-height:64px}.side figcaption b{display:block;font-size:15px}.side figcaption span{color:var(--ink-muted);font-size:13px}.side>a{text-align:center}.side figcaption{text-align:center}
+.vs{display:flex;flex-wrap:wrap;justify-content:center;gap:48px;margin:16px 0 8px}.side{margin:0;display:flex;flex-direction:column;gap:10px;width:400px;max-width:100%}.side .f916{max-width:400px}.vs.many{gap:32px}.vs.many .side{width:320px}.side figcaption{font-size:14px;min-height:64px}.side figcaption b{display:block;font-size:15px}.side figcaption span{color:var(--ink-muted);font-size:13px}.side>a{text-align:center}.side figcaption{text-align:center}
 /* process */
 .proc{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start}
 .steps-list{list-style:none;margin:0;padding:0;position:relative}.steps-list::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;border-left:2px solid var(--line)}
@@ -72,23 +72,23 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 @media (max-width:720px){.band .in,main,nav.toc .in,footer{padding-left:16px;padding-right:16px}.band .in{grid-template-columns:1fr}.band .stripe{display:none}.band h1{font-size:30px}.sh h2{font-size:24px}
  .vs{justify-content:center}.kpis.three{grid-template-columns:1fr}.kpis.three .kpi{padding-left:0;border-left:none}.kpis.three .kpi+.kpi{border-top:1px solid var(--line)}.kpi b{font-size:26px}footer{flex-direction:column}.tabs button{flex:1;padding:10px 8px;font-size:13px}}</style></head><body>
 <div class="band"><div class="in"><div><img src="assets/dsc-logo.png" alt="DSC"><h1>Quy trình sản xuất video: thời gian &amp; chi phí</h1>
-<p>5 định dạng video dọc 9:16 do trợ lý AI và máy dựng tự động làm, người duyệt ở các điểm dừng. Số liệu đo từ 55 phiên làm việc thật, 13/10/2026–23/10/2026.</p></div>
+<p>5 định dạng video dọc 9:16 do trợ lý AI và máy dựng tự động làm, người duyệt ở các điểm dừng. Số liệu đo từ 60 phiên làm việc thật, 13/10/2026–23/10/2026.</p></div>
 <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div></div>
 <nav class="toc" aria-label="Chọn phần"><div class="in"><a href="#tongquan" data-go="tongquan">Tổng quan</a><a href="#news" data-go="news">Tin tức</a><a href="#sticker" data-go="sticker">Giải thích (sticker)</a><a href="#sticker-ceo" data-go="sticker-ceo">So sánh A–B (sticker)</a><a href="#handdrawn" data-go="handdrawn">Vẽ tay</a><a href="#essay" data-go="essay">Phân tích (Vox)</a><a href="#kehoach" data-go="kehoach">Kế hoạch &amp; cách tính</a></div></nav>
 <main>
 <section id="tomtat" class="page" data-page="tongquan">
 <header class="sh"><h2>Tóm tắt cho quản lý</h2><span class="pg">01</span></header>
-<p class="lead">Một video cập nhật tin tức thực trả khoảng <b>7.000 đ</b> khi khấu hao gói Claude ($1,27 nếu trả theo API), mất khoảng 8 phút máy và AI. Lên production chỉ thêm khoảng 3 phút người duyệt hình. Video giải thích bằng sticker duyệt tay 6 điểm, thực trả khoảng 7.000 đ và khoảng 27 phút người mỗi video.</p>
+<p class="lead">Một video cập nhật tin tức thực trả khoảng <b>9.000 đ</b> khi khấu hao gói Claude ($1,64 nếu trả theo API), mất khoảng 14 phút máy và AI. Lên production chỉ thêm khoảng 3 phút người duyệt hình. Video giải thích bằng sticker duyệt tay 6 điểm, thực trả khoảng 7.000 đ và khoảng 18 phút người mỗi video.</p>
 <div class="kpis">
-<div class="kpi hl"><span>Tin tức · có duyệt hình</span><b>$0,26</b><small>thực trả · API $1,27 · 3 phút người</small></div>
-<div class="kpi"><span>Tin tức · tự động</span><b>$0,26</b><small>thực trả · API $1,27 · 8 phút/video</small></div>
-<div class="kpi"><span>Giải thích (sticker) · có duyệt</span><b>$0,27</b><small>thực trả · API $1,34 · 27 phút người</small></div>
-<div class="kpi"><span>Tổng AI 9 ngày qua</span><b>$306</b><small>giá API · 59% là xây công cụ</small></div>
+<div class="kpi hl"><span>Tin tức · có duyệt hình</span><b>$0,33</b><small>thực trả · API $1,64 · 3 phút người</small></div>
+<div class="kpi"><span>Tin tức · tự động</span><b>$0,33</b><small>thực trả · API $1,64 · 14 phút/video</small></div>
+<div class="kpi"><span>Giải thích (sticker) · có duyệt</span><b>$0,27</b><small>thực trả · API $1,34 · 18 phút người</small></div>
+<div class="kpi"><span>Tổng AI 10 ngày qua</span><b>$324</b><small>giá API · 61% là xây công cụ</small></div>
 </div>
 <div class="keys"><h3>Điểm chính</h3><ol>
 <li><b>Tiền mặt gần như chỉ là gói AI.</b> Giọng đọc, nhạc, footage, dựng và đăng gần như miễn phí. Gói Claude $200/tháng dùng được khoảng $997 giá API, nên mỗi 1 USD giá API thực trả $0,20.</li>
-<li><b>Giới hạn thật là hạn mức của gói.</b> Một gói làm được khoảng 783 video tin có duyệt, hoặc 742 video sticker mỗi tháng nếu chỉ làm một loại.</li>
-<li><b>Thời gian người là khác biệt lớn nhất giữa các định dạng.</b> Tin chỉ cần duyệt hình (khoảng 3 phút); sticker có 6 điểm dừng và mỗi vòng góp ý khiến AI đọc lại toàn bộ bối cảnh, nên tốn khoảng 27 phút người và đắt hơn tin 1 lần.</li>
+<li><b>Giới hạn thật là hạn mức của gói.</b> Một gói làm được khoảng 608 video tin có duyệt, hoặc 742 video sticker mỗi tháng nếu chỉ làm một loại.</li>
+<li><b>Thời gian người là khác biệt lớn nhất giữa các định dạng.</b> Tin chỉ cần duyệt hình (khoảng 3 phút); sticker có 6 điểm dừng và mỗi vòng góp ý khiến AI đọc lại toàn bộ bối cảnh, nên tốn khoảng 18 phút người và đắt hơn tin 1 lần.</li>
 <li><b>Quy trình mới (22/10) dồn duyệt lên đầu.</b> Ý tưởng, kịch bản và phác thảo được duyệt trước khi làm ảnh và giọng, để giảm số lần phải sửa ở bản xem thử.</li>
 </ol></div>
 </section>
@@ -96,7 +96,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <header class="sh"><h2>So sánh các định dạng 9:16</h2><span class="pg">02</span></header>
 <p class="muted">“Thực trả” là chi phí sau khi khấu hao gói Claude. “Giá API” tính theo bảng giá Claude công bố (Opus 5.5: $4 / $20 cho 1 triệu token vào / ra). Thanh màu chia tổng thời gian thành AI làm, máy chạy và người. Các định dạng 16:9 tạm ẩn.</p>
 <div class="tablewrap"><table class="compare"><thead><tr><th>Định dạng</th><th class="num">Thực trả (gói)</th><th class="num">Giá API</th><th>Tổng thời gian / video</th><th class="num">Người</th><th class="num">Điểm duyệt</th><th class="num">Video / gói / tháng</th><th>Nguồn số</th></tr></thead><tbody>
-<tr><td><a href="#news">Tin tức · tự động</a><small>9:16 · 40–60 giây</small></td><td class="num"><b>$0,26</b><small>7.000 đ</small></td><td class="num">$1,27<small>33.000 đ</small></td><td>8 phút<div class="tbar" title="AI 2 phút · máy 6 phút · người 0 phút"><span class="ai" style="width:23.6%"></span><span class="machine" style="width:76.4%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">783</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#news">Tin tức · có duyệt</a><small>9:16 · 40–60 giây</small></td><td class="num"><b>$0,26</b><small>7.000 đ</small></td><td class="num">$1,27<small>33.000 đ</small></td><td>11 phút<div class="tbar" title="AI 2 phút · máy 6 phút · người 3 phút"><span class="ai" style="width:17.4%"></span><span class="machine" style="width:56.3%"></span><span class="human" style="width:26.3%"></span></div></td><td class="num">3 phút</td><td class="num">1</td><td class="num">783</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#sticker">Giải thích (sticker) · tự động</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$0,27</b><small>7.000 đ</small></td><td class="num">$1,34<small>35.000 đ</small></td><td>9 phút<div class="tbar" title="AI 3 phút · máy 5 phút · người 0 phút"><span class="ai" style="width:39.2%"></span><span class="machine" style="width:60.8%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">742</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#sticker">Giải thích (sticker) · có duyệt</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$0,27</b><small>7.000 đ</small></td><td class="num">$1,34<small>35.000 đ</small></td><td>36 phút<div class="tbar" title="AI 3 phút · máy 5 phút · người 27 phút"><span class="ai" style="width:9.5%"></span><span class="machine" style="width:14.8%"></span><span class="human" style="width:75.7%"></span></div></td><td class="num">27 phút</td><td class="num">6</td><td class="num">742</td><td><span class="tag ok">Đo thật · video 22-10</span></td></tr><tr><td><a href="#sticker-ceo">So sánh A–B (sticker) · tự động</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$1,80</b><small>47.000 đ</small></td><td class="num">$8,99<small>236.000 đ</small></td><td>13 phút<div class="tbar" title="AI 11 phút · máy 2 phút · người 0 phút"><span class="ai" style="width:84.2%"></span><span class="machine" style="width:15.8%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">110</td><td><span class="tag est">Ước tính</span></td></tr><tr><td><a href="#sticker-ceo">So sánh A–B (sticker) · có duyệt</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$1,80</b><small>47.000 đ</small></td><td class="num">$8,99<small>236.000 đ</small></td><td>38 phút<div class="tbar" title="AI 11 phút · máy 2 phút · người 25 phút"><span class="ai" style="width:29.4%"></span><span class="machine" style="width:5.5%"></span><span class="human" style="width:65.1%"></span></div></td><td class="num">25 phút</td><td class="num">6</td><td class="num">110</td><td><span class="tag ok">Đo thật · video 22-10</span></td></tr><tr><td><a href="#handdrawn">Vẽ tay · tự động</a><small>9:16 hoặc 16:9 · ~60 giây</small></td><td class="num"><b>$0,37</b><small>10.000 đ</small></td><td class="num">$1,84<small>49.000 đ</small></td><td>4 phút<div class="tbar" title="AI 3 phút · máy 1 phút · người 0 phút"><span class="ai" style="width:69.6%"></span><span class="machine" style="width:30.4%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">540</td><td><span class="tag est">Ước tính</span></td></tr><tr><td><a href="#handdrawn">Vẽ tay · có duyệt</a><small>9:16 hoặc 16:9 · ~60 giây</small></td><td class="num"><b>$0,37</b><small>10.000 đ</small></td><td class="num">$1,84<small>49.000 đ</small></td><td>4 phút<div class="tbar" title="AI 3 phút · máy 1 phút · người 0 phút"><span class="ai" style="width:69.6%"></span><span class="machine" style="width:30.4%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">chưa đo</td><td class="num">7</td><td class="num">540</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#essay">Phân tích (Vox) · tự động</a><small>9:16 · 45–60 giây</small></td><td class="num"><b>$0,51</b><small>13.000 đ</small></td><td class="num">$2,52<small>66.000 đ</small></td><td>13 phút<div class="tbar" title="AI 6 phút · máy 7 phút · người 0 phút"><span class="ai" style="width:47.9%"></span><span class="machine" style="width:52.1%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">394</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#essay">Phân tích (Vox) · có duyệt</a><small>9:16 · 45–60 giây</small></td><td class="num"><b>$0,51</b><small>13.000 đ</small></td><td class="num">$2,52<small>66.000 đ</small></td><td>13 phút<div class="tbar" title="AI 6 phút · máy 7 phút · người 0 phút"><span class="ai" style="width:47.9%"></span><span class="machine" style="width:52.1%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">chưa đo</td><td class="num">5</td><td class="num">394</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr>
+<tr><td><a href="#news">Tin tức · tự động</a><small>9:16 · 40–60 giây</small></td><td class="num"><b>$0,33</b><small>9.000 đ</small></td><td class="num">$1,64<small>43.000 đ</small></td><td>14 phút<div class="tbar" title="AI 3 phút · máy 10 phút · người 0 phút"><span class="ai" style="width:23.3%"></span><span class="machine" style="width:76.7%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">608</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#news">Tin tức · có duyệt</a><small>9:16 · 40–60 giây</small></td><td class="num"><b>$0,33</b><small>9.000 đ</small></td><td class="num">$1,64<small>43.000 đ</small></td><td>17 phút<div class="tbar" title="AI 3 phút · máy 10 phút · người 3 phút"><span class="ai" style="width:19.0%"></span><span class="machine" style="width:62.8%"></span><span class="human" style="width:18.2%"></span></div></td><td class="num">3 phút</td><td class="num">1</td><td class="num">608</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#sticker">Giải thích (sticker) · tự động</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$0,27</b><small>7.000 đ</small></td><td class="num">$1,34<small>35.000 đ</small></td><td>9 phút<div class="tbar" title="AI 3 phút · máy 5 phút · người 0 phút"><span class="ai" style="width:39.2%"></span><span class="machine" style="width:60.8%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">742</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#sticker">Giải thích (sticker) · có duyệt</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$0,27</b><small>7.000 đ</small></td><td class="num">$1,34<small>35.000 đ</small></td><td>26 phút<div class="tbar" title="AI 3 phút · máy 5 phút · người 18 phút"><span class="ai" style="width:12.9%"></span><span class="machine" style="width:20.0%"></span><span class="human" style="width:67.1%"></span></div></td><td class="num">18 phút</td><td class="num">6</td><td class="num">742</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#sticker-ceo">So sánh A–B (sticker) · tự động</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$1,80</b><small>47.000 đ</small></td><td class="num">$8,99<small>236.000 đ</small></td><td>13 phút<div class="tbar" title="AI 11 phút · máy 2 phút · người 0 phút"><span class="ai" style="width:84.2%"></span><span class="machine" style="width:15.8%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">110</td><td><span class="tag est">Ước tính</span></td></tr><tr><td><a href="#sticker-ceo">So sánh A–B (sticker) · có duyệt</a><small>9:16 · 40–55 giây</small></td><td class="num"><b>$1,80</b><small>47.000 đ</small></td><td class="num">$8,99<small>236.000 đ</small></td><td>38 phút<div class="tbar" title="AI 11 phút · máy 2 phút · người 25 phút"><span class="ai" style="width:29.4%"></span><span class="machine" style="width:5.5%"></span><span class="human" style="width:65.1%"></span></div></td><td class="num">25 phút</td><td class="num">6</td><td class="num">110</td><td><span class="tag ok">Đo thật · video 22-10</span></td></tr><tr><td><a href="#handdrawn">Vẽ tay · tự động</a><small>9:16 hoặc 16:9 · ~60 giây</small></td><td class="num"><b>$0,38</b><small>10.000 đ</small></td><td class="num">$1,87<small>49.000 đ</small></td><td>4 phút<div class="tbar" title="AI 3 phút · máy 1 phút · người 0 phút"><span class="ai" style="width:69.6%"></span><span class="machine" style="width:30.4%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">531</td><td><span class="tag est">Ước tính</span></td></tr><tr><td><a href="#handdrawn">Vẽ tay · có duyệt</a><small>9:16 hoặc 16:9 · ~60 giây</small></td><td class="num"><b>$0,38</b><small>10.000 đ</small></td><td class="num">$1,87<small>49.000 đ</small></td><td>4 phút<div class="tbar" title="AI 3 phút · máy 1 phút · người 0 phút"><span class="ai" style="width:69.6%"></span><span class="machine" style="width:30.4%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">chưa đo</td><td class="num">7</td><td class="num">531</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#essay">Phân tích (Vox) · tự động</a><small>9:16 · 45–60 giây</small></td><td class="num"><b>$0,51</b><small>13.000 đ</small></td><td class="num">$2,52<small>66.000 đ</small></td><td>13 phút<div class="tbar" title="AI 6 phút · máy 7 phút · người 0 phút"><span class="ai" style="width:47.9%"></span><span class="machine" style="width:52.1%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">0 phút</td><td class="num">0</td><td class="num">394</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr><tr><td><a href="#essay">Phân tích (Vox) · có duyệt</a><small>9:16 · 45–60 giây</small></td><td class="num"><b>$0,51</b><small>13.000 đ</small></td><td class="num">$2,52<small>66.000 đ</small></td><td>13 phút<div class="tbar" title="AI 6 phút · máy 7 phút · người 0 phút"><span class="ai" style="width:47.9%"></span><span class="machine" style="width:52.1%"></span><span class="human" style="width:0.0%"></span></div></td><td class="num">chưa đo</td><td class="num">5</td><td class="num">394</td><td><span class="tag ok">Đo thật · video 23-10</span></td></tr>
 </tbody></table></div>
 <p class="legend"><span><i class="ai"></i>AI làm</span><span><i class="machine"></i>Máy chạy</span><span><i class="human"></i>Người</span></p>
 </section>
@@ -114,13 +114,13 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <a href="https://www.tiktok.com/@d.trending/video/7698214031013809429" target="_blank" rel="noopener">Mở trên TikTok ↗</a></figure>
 </div>
 <div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-tab="news-auto">Tự động (không duyệt)</button><button role="tab" aria-selected="false" data-tab="news-review">Có người duyệt hình</button></div><div class="tabpane on" data-tabpane="news-auto"><div class="kpis five">
-<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,26</b><small>7.000 đ · khấu hao gói</small></div>
-<div class="kpi"><span>Nếu trả theo API</span><b>$1,27</b><small>33.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
-<div class="kpi"><span>Tổng thời gian</span><b>8 phút</b><small>AI 2 phút · máy 6 phút</small></div>
+<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,33</b><small>9.000 đ · khấu hao gói</small></div>
+<div class="kpi"><span>Nếu trả theo API</span><b>$1,64</b><small>43.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
+<div class="kpi"><span>Tổng thời gian</span><b>14 phút</b><small>AI 3 phút · máy 10 phút</small></div>
 <div class="kpi"><span>Người phải làm</span><b>0 phút</b><small>không có điểm duyệt</small></div>
-<div class="kpi"><span>1 gói làm được</span><b>783</b><small>video / tháng</small></div>
+<div class="kpi"><span>1 gói làm được</span><b>608</b><small>video / tháng</small></div>
 </div>
-<p class="muted small">Đo thật từ lần chạy tự động gần nhất, không người trực: “Làm sạch mã số thuế vẫn chậm” (23-10), từ lúc bắt đầu tới khi xuất xong.</p>
+<p class="muted small">Đo thật từ lần chạy tự động gần nhất, không người trực: “Chính phủ đề xuất thuế 0,2% với đất bỏ hoang” (23-10), từ lúc bắt đầu tới khi xuất xong.</p>
 <p class="callout">Đang chạy cho kênh thử nghiệm @tintaichinh60s: lịch tự chạy 2 lần/ngày, không có điểm dừng chờ duyệt. Người chỉ xem lại sau khi đăng.</p>
 <div class="subtabs" role="tablist"><button role="tab" aria-selected="true" data-sub="proc">Quy trình &amp; đầu ra từng bước</button><button role="tab" aria-selected="false" data-sub="cost">Bóc tách thời gian &amp; chi phí</button></div>
 <div class="subpane on" data-subpane="proc"><div class="proc"><ol class="steps-list"><li class="step"><span class="no-c machine">01</span><div>
@@ -148,7 +148,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <tbody><tr><td><span class="n">01</span> <b>Tìm &amp; chọn tin</b>
 <small>news-find · Claude Opus 5.5</small>
 </td>
-<td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 31%,transparent)">39 giây</td><td class="num" rowspan="2">18 giây</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">65k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 45%,transparent)">412k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 38%,transparent)">5k</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,70</b><small>gộp 2 bước</small></td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,14</b></td>
+<td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 23%,transparent)">42 giây</td><td class="num" rowspan="2">6 giây</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">56k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 5%,transparent)">255k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 9%,transparent)">2k</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,55</b><small>gộp 2 bước</small></td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ</td></tr><tr class="cont"><td><span class="n">02</span> <b>Viết kịch bản</b>
 <small>Claude Opus 5.5 · lint</small><small class="note">Chi phí chủ yếu là token Claude: đọc hướng dẫn, nguồn và viết lời.</small>
 </td>
@@ -156,40 +156,40 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">03</span> <b>Tìm hình ảnh</b>
 <small>news-media</small><small class="note">Pixabay, Wikimedia Commons, Openverse: ảnh/video có giấy phép thương mại, miễn phí. Không dùng ảnh AI cho tin.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">57 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">57 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">11k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">483k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 15%,transparent)"><b>$0,31</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 15%,transparent)"><b>$0,06</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 30%,transparent)">50 giây</td><td class="num" rowspan="1">47 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 12%,transparent)">20k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 19%,transparent)">586k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 43%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 37%,transparent)"><b>$0,41</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 37%,transparent)"><b>$0,08</b></td>
 <td class="num g">0 đ<small>ảnh có giấy phép miễn phí</small></td></tr><tr><td><span class="n">04</span> <b>Giọng đọc &amp; phụ đề</b>
 <small>Edge TTS (miễn phí) · Whisper</small>
-<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 906 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,03/video)</i> · vài giây máy <i>· 906 ký tự/video ≈ 1.103 video miễn phí/tháng</i></li></ul></td>
+<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 903 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,03/video)</i> · vài giây máy <i>· 903 ký tự/video ≈ 1.107 video miễn phí/tháng</i></li></ul></td>
 <td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 đ<small>Edge TTS</small></td></tr><tr><td><span class="n">05</span> <b>Dựng video</b>
 <small>HyperFrames · FFmpeg</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
 </td>
-<td class="num g" rowspan="1">3 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">3 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">4k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 9%,transparent)">153k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,07</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1 phút</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">7 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">18k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">8k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 57%,transparent)"><b>$0,54</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 57%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ<small>chạy trên máy cá nhân</small></td></tr><tr><td><span class="n">06</span> <b>Kiểm tra chất lượng</b>
 <small>Claude · dsc-qa</small><small class="note">AI xem khung hình trích bằng FFmpeg và đo âm lượng (EBU R128).</small>
 </td>
-<td class="num g" rowspan="1">8 giây</td><td class="num" rowspan="1">1 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">4k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">159k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,09</b></td><td class="num" rowspan="1"><b>$0,02</b></td>
+<td class="num g" rowspan="1">10 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 đ</td></tr><tr><td><span class="n">07</span> <b>Đăng</b>
 <small>YouTube API · Telegram · app TikTok</small>
 </td>
-<td class="num g" rowspan="1">11 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 46%,transparent)">2 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">5k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">167k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,10</b></td><td class="num" rowspan="1"><b>$0,02</b></td>
+<td class="num g" rowspan="1">12 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">7k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">288k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)"><b>$0,13</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)"><b>$0,03</b></td>
 <td class="num g">0 đ<small>API YouTube miễn phí</small></td></tr></tbody>
-<tfoot><tr><td><b>Tổng 1 video</b><small>8 phút từ đầu đến cuối</small></td>
-<td class="num g">2 phút</td><td class="num">6 phút</td><td class="num">—</td>
-<td class="num g">90k</td><td class="num">1,4 tr</td><td class="num">13k</td>
-<td class="num g"><b>$1,27</b><small>33.000 đ</small></td><td class="num"><b>$0,26</b><small>7.000 đ</small></td>
+<tfoot><tr><td><b>Tổng 1 video</b><small>14 phút từ đầu đến cuối</small></td>
+<td class="num g">3 phút</td><td class="num">10 phút</td><td class="num">—</td>
+<td class="num g">101k</td><td class="num">2,3 tr</td><td class="num">18k</td>
+<td class="num g"><b>$1,64</b><small>43.000 đ</small></td><td class="num"><b>$0,33</b><small>9.000 đ</small></td>
 <td class="num g">0 đ<small>không phát sinh</small></td></tr></tfoot></table></div>
 <p class="muted small"><b>Chi phí AI</b> ở mỗi bước là tiền token Claude tiêu trong lúc AI làm bước đó (đọc, viết, chạy lệnh, kiểm tra kết quả), không phải tiền của dịch vụ (giọng đọc, ảnh); tiền dịch vụ nằm ở cột “Dịch vụ ngoài”. Việc nghiên cứu đối thủ, sửa công cụ trong cùng phiên được tách sang chi phí xây công cụ.</p>
 <div class="amort">
 <div><span>Gói Claude</span><b>$200/tháng</b></div><i>→</i>
 <div><span>Dùng được ≈</span><b>$997</b><small>giá API / tháng</small></div><i>→</i>
 <div><span>1 USD giá API thực trả</span><b>$0,20</b></div><i>→</i>
-<div><span>Video này theo gói</span><b>$0,26</b><small>7.000 đ</small></div><i>→</i>
-<div><span>1 gói làm được</span><b>783 video</b><small>/tháng nếu chỉ làm loại này</small></div>
+<div><span>Video này theo gói</span><b>$0,33</b><small>9.000 đ</small></div><i>→</i>
+<div><span>1 gói làm được</span><b>608 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Microsoft Edge TTS</h4><div class="vgrid">
-<div><span>Ký tự lời đọc / video</span><b>906</b><small>trung bình 21 video, tính cả dấu cách</small></div>
-<div><span>Chi phí</span><b>0 đ</b><small>miễn phí, không giới hạn ký tự</small></div><div><span>Nếu đổi sang Chirp 3 HD</span><b>$0,03/video</b><small>sau khi hết 1 triệu ký tự miễn phí (≈ 1.103 video/tháng)</small></div>
+<div><span>Ký tự lời đọc / video</span><b>903</b><small>trung bình 24 video, tính cả dấu cách</small></div>
+<div><span>Chi phí</span><b>0 đ</b><small>miễn phí, không giới hạn ký tự</small></div><div><span>Nếu đổi sang Chirp 3 HD</span><b>$0,03/video</b><small>sau khi hết 1 triệu ký tự miễn phí (≈ 1.107 video/tháng)</small></div>
 </div></div>
 <details class="how"><summary>Số phút “AI làm”, “Máy chạy”, “Người” lấy từ đâu?</summary>
 <p>Từ nhật ký phiên làm việc của Claude Code: mỗi tin nhắn, mỗi lệnh và mỗi kết quả lệnh đều có giờ ghi lại. Khoảng thời gian giữa hai mục liên tiếp được tính cho bên đang làm:</p>
@@ -200,13 +200,13 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 </ul>
 <p>Giai đoạn được nhận ra theo lệnh AI chạy trong khoảng đó (ví dụ lệnh tạo giọng → Giọng đọc). Chạy tự động từ lịch: cả phiên chỉ có 1 tin nhắn khởi động nên phần Người bằng 0.</p>
 </details></div></div><div class="tabpane" data-tabpane="news-review"><div class="kpis five">
-<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,26</b><small>7.000 đ · khấu hao gói</small></div>
-<div class="kpi"><span>Nếu trả theo API</span><b>$1,27</b><small>33.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
-<div class="kpi"><span>Tổng thời gian</span><b>11 phút</b><small>AI 2 phút · máy 6 phút</small></div>
+<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,33</b><small>9.000 đ · khấu hao gói</small></div>
+<div class="kpi"><span>Nếu trả theo API</span><b>$1,64</b><small>43.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
+<div class="kpi"><span>Tổng thời gian</span><b>17 phút</b><small>AI 3 phút · máy 10 phút</small></div>
 <div class="kpi"><span>Người phải làm</span><b>3 phút</b><small>1 điểm dừng chờ người</small></div>
-<div class="kpi"><span>1 gói làm được</span><b>783</b><small>video / tháng</small></div>
+<div class="kpi"><span>1 gói làm được</span><b>608</b><small>video / tháng</small></div>
 </div>
-<p class="muted small">Đo thật từ lần chạy tự động gần nhất, không người trực: “Làm sạch mã số thuế vẫn chậm” (23-10), từ lúc bắt đầu tới khi xuất xong.</p>
+<p class="muted small">Đo thật từ lần chạy tự động gần nhất, không người trực: “Chính phủ đề xuất thuế 0,2% với đất bỏ hoang” (23-10), từ lúc bắt đầu tới khi xuất xong.</p>
 <p class="callout">Production = luồng tự động đã đo (11 video) + 1 điểm duyệt hình ảnh. Thời gian duyệt hình là ước tính 3 phút/video (xem bảng hình). Bước chỉnh tay bằng HyperFrames Studio chỉ làm khi cần nên không cộng vào tổng. Số trước đây cao gấp nhiều lần vì lấy từ các phiên còn đang sửa công cụ.</p>
 <div class="subtabs" role="tablist"><button role="tab" aria-selected="true" data-sub="proc">Quy trình &amp; đầu ra từng bước</button><button role="tab" aria-selected="false" data-sub="cost">Bóc tách thời gian &amp; chi phí</button></div>
 <div class="subpane on" data-subpane="proc"><div class="proc"><ol class="steps-list"><li class="step"><span class="no-c machine">01</span><div>
@@ -237,7 +237,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <tbody><tr><td><span class="n">01</span> <b>Tìm &amp; chọn tin</b>
 <small>news-find · Claude Opus 5.5</small>
 </td>
-<td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 31%,transparent)">39 giây</td><td class="num" rowspan="2">18 giây</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">65k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 45%,transparent)">412k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 38%,transparent)">5k</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,70</b><small>gộp 2 bước</small></td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,14</b></td>
+<td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 23%,transparent)">42 giây</td><td class="num" rowspan="2">6 giây</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">56k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 5%,transparent)">255k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 9%,transparent)">2k</td><td class="num g" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,55</b><small>gộp 2 bước</small></td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ</td></tr><tr class="cont"><td><span class="n">02</span> <b>Viết kịch bản</b>
 <small>Claude Opus 5.5 · lint</small><small class="note">Chi phí chủ yếu là token Claude: đọc hướng dẫn, nguồn và viết lời.</small>
 </td>
@@ -245,19 +245,19 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">03</span> <b>Tìm hình ảnh</b> <span class="tag gate">có duyệt</span>
 <small>news-media</small><small class="note">Pixabay, Wikimedia Commons, Openverse: ảnh/video có giấy phép thương mại, miễn phí. Không dùng ảnh AI cho tin.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">57 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">57 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">3 phút</td><td class="num g" rowspan="1">11k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">483k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 15%,transparent)"><b>$0,31</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 15%,transparent)"><b>$0,06</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 30%,transparent)">50 giây</td><td class="num" rowspan="1">47 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">3 phút</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 12%,transparent)">20k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 19%,transparent)">586k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 43%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 37%,transparent)"><b>$0,41</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 37%,transparent)"><b>$0,08</b></td>
 <td class="num g">0 đ<small>ảnh có giấy phép miễn phí</small></td></tr><tr><td><span class="n">04</span> <b>Giọng đọc &amp; phụ đề</b>
 <small>Edge TTS (miễn phí) · Whisper</small>
-<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 906 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,03/video)</i> · vài giây máy <i>· 906 ký tự/video ≈ 1.103 video miễn phí/tháng</i></li></ul></td>
+<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 903 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,03/video)</i> · vài giây máy <i>· 903 ký tự/video ≈ 1.107 video miễn phí/tháng</i></li></ul></td>
 <td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 đ<small>Edge TTS</small></td></tr><tr><td><span class="n">05</span> <b>Dựng video</b>
 <small>HyperFrames · FFmpeg</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
 </td>
-<td class="num g" rowspan="1">3 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">3 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">4k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 9%,transparent)">153k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,07</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1 phút</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">7 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">18k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">8k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 57%,transparent)"><b>$0,54</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 57%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ<small>chạy trên máy cá nhân</small></td></tr><tr><td><span class="n">06</span> <b>Kiểm tra chất lượng</b>
 <small>Claude · dsc-qa</small><small class="note">AI xem khung hình trích bằng FFmpeg và đo âm lượng (EBU R128).</small>
 </td>
-<td class="num g" rowspan="2">8 giây</td><td class="num" rowspan="2">1 giây</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2">4k</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">159k</td><td class="num" rowspan="2">1k</td><td class="num g" rowspan="2"><b>$0,09</b><small>gộp 2 bước</small></td><td class="num" rowspan="2"><b>$0,02</b></td>
+<td class="num g" rowspan="2">10 giây</td><td class="num" rowspan="2" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2 phút</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2">—</td><td class="num" rowspan="2">—</td><td class="num" rowspan="2">—</td><td class="num g" rowspan="2"><b>$0,00</b><small>gộp 2 bước</small></td><td class="num" rowspan="2"><b>$0,00</b></td>
 <td class="num g">0 đ</td></tr><tr class="cont"><td><span class="n">07</span> <b>Chỉnh tay (nếu cần)</b>
 <small>HyperFrames Studio</small>
 </td>
@@ -265,24 +265,24 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">08</span> <b>Đăng</b>
 <small>YouTube API · Telegram · app TikTok</small>
 </td>
-<td class="num g" rowspan="1">11 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 46%,transparent)">2 phút</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">5k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">167k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,10</b></td><td class="num" rowspan="1"><b>$0,02</b></td>
+<td class="num g" rowspan="1">12 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">7k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">288k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)"><b>$0,13</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)"><b>$0,03</b></td>
 <td class="num g">0 đ<small>API YouTube miễn phí</small></td></tr></tbody>
-<tfoot><tr><td><b>Tổng 1 video</b><small>11 phút từ đầu đến cuối</small></td>
-<td class="num g">2 phút</td><td class="num">6 phút</td><td class="num">3 phút</td>
-<td class="num g">90k</td><td class="num">1,4 tr</td><td class="num">13k</td>
-<td class="num g"><b>$1,27</b><small>33.000 đ</small></td><td class="num"><b>$0,26</b><small>7.000 đ</small></td>
+<tfoot><tr><td><b>Tổng 1 video</b><small>17 phút từ đầu đến cuối</small></td>
+<td class="num g">3 phút</td><td class="num">10 phút</td><td class="num">3 phút</td>
+<td class="num g">101k</td><td class="num">2,3 tr</td><td class="num">18k</td>
+<td class="num g"><b>$1,64</b><small>43.000 đ</small></td><td class="num"><b>$0,33</b><small>9.000 đ</small></td>
 <td class="num g">0 đ<small>không phát sinh</small></td></tr></tfoot></table></div>
 <p class="muted small"><b>Chi phí AI</b> ở mỗi bước là tiền token Claude tiêu trong lúc AI làm bước đó (đọc, viết, chạy lệnh, kiểm tra kết quả), không phải tiền của dịch vụ (giọng đọc, ảnh); tiền dịch vụ nằm ở cột “Dịch vụ ngoài”. Việc nghiên cứu đối thủ, sửa công cụ trong cùng phiên được tách sang chi phí xây công cụ.</p>
 <div class="amort">
 <div><span>Gói Claude</span><b>$200/tháng</b></div><i>→</i>
 <div><span>Dùng được ≈</span><b>$997</b><small>giá API / tháng</small></div><i>→</i>
 <div><span>1 USD giá API thực trả</span><b>$0,20</b></div><i>→</i>
-<div><span>Video này theo gói</span><b>$0,26</b><small>7.000 đ</small></div><i>→</i>
-<div><span>1 gói làm được</span><b>783 video</b><small>/tháng nếu chỉ làm loại này</small></div>
+<div><span>Video này theo gói</span><b>$0,33</b><small>9.000 đ</small></div><i>→</i>
+<div><span>1 gói làm được</span><b>608 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Microsoft Edge TTS</h4><div class="vgrid">
-<div><span>Ký tự lời đọc / video</span><b>906</b><small>trung bình 21 video, tính cả dấu cách</small></div>
-<div><span>Chi phí</span><b>0 đ</b><small>miễn phí, không giới hạn ký tự</small></div><div><span>Nếu đổi sang Chirp 3 HD</span><b>$0,03/video</b><small>sau khi hết 1 triệu ký tự miễn phí (≈ 1.103 video/tháng)</small></div>
+<div><span>Ký tự lời đọc / video</span><b>903</b><small>trung bình 24 video, tính cả dấu cách</small></div>
+<div><span>Chi phí</span><b>0 đ</b><small>miễn phí, không giới hạn ký tự</small></div><div><span>Nếu đổi sang Chirp 3 HD</span><b>$0,03/video</b><small>sau khi hết 1 triệu ký tự miễn phí (≈ 1.107 video/tháng)</small></div>
 </div></div>
 <details class="how"><summary>Số phút “AI làm”, “Máy chạy”, “Người” lấy từ đâu?</summary>
 <p>Từ nhật ký phiên làm việc của Claude Code: mỗi tin nhắn, mỗi lệnh và mỗi kết quả lệnh đều có giờ ghi lại. Khoảng thời gian giữa hai mục liên tiếp được tính cho bên đang làm:</p>
@@ -299,8 +299,11 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <p class="lead">Nhân vật sticker trên nền trắng, mỗi từ khoá đổi một hình, giải thích một khái niệm trong 40–50 giây. Ví dụ: Vượn giải thích lạm phát.</p>
 <p class="meta">9:16 · 40–55 giây · TikTok, YouTube Shorts, Reels</p>
 <h3>So với video tham chiếu</h3>
-<div class="vs">
+<div class="vs many">
 <figure class="side"><figcaption><b>DSC</b><span>Lạm phát là gì? Vượn giải thích</span></figcaption><div class="f916 "><div class="tt" data-tt><video playsinline loop preload="none" poster="assets/shorts-sticker-vuon-lam-phat-v4.jpg" src="assets/shorts-sticker-vuon-lam-phat-v4.mp4"></video>
+<div class="tt-ui" aria-hidden="true"><div class="tt-rail"><span class="tt-av"><img src="assets/dsc-logo.png" alt=""></span><span><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.5 1.1 4.3 2.4.8-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.4 1.2 4.6 3.1 6.1L4.5 21l3.9-1.9c1.1.3 2.3.4 3.6.4 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M6 2.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V3.5a1 1 0 0 1 1-1z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M13 4.5 22 12l-9 7.5v-4.3C7.3 15.2 4 17 2 20.5 2.6 14.2 6 9.6 13 8.8z"/></svg></span></div>
+<div class="tt-play"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></div><div class="tt-bar"><i></i></div></div></div></div></figure>
+<figure class="side"><figcaption><b>DSC</b><span>Lạm phát là gì? Cheems giải thích</span></figcaption><div class="f916 "><div class="tt" data-tt><video playsinline loop preload="none" poster="assets/shorts-sticker-cheems-lam-phat.jpg" src="assets/shorts-sticker-cheems-lam-phat.mp4"></video>
 <div class="tt-ui" aria-hidden="true"><div class="tt-rail"><span class="tt-av"><img src="assets/dsc-logo.png" alt=""></span><span><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.5 1.1 4.3 2.4.8-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.4 1.2 4.6 3.1 6.1L4.5 21l3.9-1.9c1.1.3 2.3.4 3.6.4 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M6 2.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V3.5a1 1 0 0 1 1-1z"/></svg></span><span><svg viewBox="0 0 24 24"><path d="M13 4.5 22 12l-9 7.5v-4.3C7.3 15.2 4 17 2 20.5 2.6 14.2 6 9.6 13 8.8z"/></svg></span></div>
 <div class="tt-play"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></div><div class="tt-bar"><i></i></div></div></div></div></figure>
 <figure class="side"><figcaption><b>Gorillanomics</b><span>Gas Prices explained by Gorillas · 146k view</span></figcaption>
@@ -359,7 +362,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 – $0,43<small>tuỳ nguồn ảnh</small></td></tr><tr><td><span class="n">05</span> <b>Giọng đọc</b>
 <small>Chirp 3 HD · Whisper</small>
-<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 760 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 760 ký tự/video ≈ 1.315 video miễn phí/tháng</i></li></ul></td>
+<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 746 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 746 ký tự/video ≈ 1.340 video miễn phí/tháng</i></li></ul></td>
 <td class="num g" rowspan="1">5 giây</td><td class="num" rowspan="1">3 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">1k</td><td class="num" rowspan="1">93k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,04</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
 <td class="num g">0 đ<small>trong hạn mức Chirp; vượt: $0,02</small></td></tr><tr><td><span class="n">06</span> <b>Bản xem thử</b>
 <small>build-sticker.mjs · HyperFrames</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
@@ -388,8 +391,8 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <div><span>1 gói làm được</span><b>742 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Google Chirp 3 HD <small>vi-VN-Chirp3-HD-Algenib</small></h4><div class="vgrid">
-<div><span>Ký tự lời đọc / video</span><b>760</b><small>trung bình 5 video, tính cả dấu cách</small></div>
-<div><span>Miễn phí mỗi tháng</span><b>1 triệu ký tự</b><small>≈ 1.315 video loại này</small></div>
+<div><span>Ký tự lời đọc / video</span><b>746</b><small>trung bình 7 video, tính cả dấu cách</small></div>
+<div><span>Miễn phí mỗi tháng</span><b>1 triệu ký tự</b><small>≈ 1.340 video loại này</small></div>
 <div><span>Vượt hạn mức</span><b>$0,02/video</b><small>1.000 đ · giá $30/1 triệu ký tự</small></div>
 <div><span>Bước giọng đọc đã chạy</span><b>7 lần</b><small>ở video mẫu. Lần nào lời thay đổi thì tạo giọng mới và tính thêm ký tự.</small></div>
 </div></div>
@@ -403,12 +406,12 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <p>Giai đoạn được nhận ra theo lệnh AI chạy trong khoảng đó (ví dụ lệnh tạo giọng → Giọng đọc). Chạy tự động từ lịch: cả phiên chỉ có 1 tin nhắn khởi động nên phần Người bằng 0.</p>
 </details></div></div><div class="tabpane" data-tabpane="sticker-review"><div class="kpis five">
 <div class="kpi hl"><span>Chi phí thực / video</span><b>$0,27</b><small>7.000 đ · khấu hao gói</small></div>
-<div class="kpi"><span>Nếu trả theo API</span><b>$1,34</b><small>35.000 đ · <span class="tag ok">Đo thật · video 22-10</span></small></div>
-<div class="kpi"><span>Tổng thời gian</span><b>36 phút</b><small>AI 3 phút · máy 5 phút</small></div>
-<div class="kpi"><span>Người phải làm</span><b>27 phút</b><small>6 điểm dừng chờ người</small></div>
+<div class="kpi"><span>Nếu trả theo API</span><b>$1,34</b><small>35.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
+<div class="kpi"><span>Tổng thời gian</span><b>26 phút</b><small>AI 3 phút · máy 5 phút</small></div>
+<div class="kpi"><span>Người phải làm</span><b>18 phút</b><small>6 điểm dừng chờ người</small></div>
 <div class="kpi"><span>1 gói làm được</span><b>742</b><small>video / tháng</small></div>
 </div>
-<p class="muted small">AI, máy và chi phí lấy từ lần chạy tự động thật “GDP là gì? Vượn giải thích” (23-10); thời gian người ở từng điểm duyệt đo từ video làm tay gần nhất “Lạm phát là gì? Vượn giải thích” (22-10). Nếu người yêu cầu sửa, AI làm lại bước đó: video làm tay này tốn $15 giá API vì nhiều vòng sửa và thử nghiệm.</p>
+<p class="muted small">AI, máy và chi phí lấy từ lần chạy tự động thật “GDP là gì? Vượn giải thích” (23-10); thời gian người ở từng điểm duyệt đo từ video làm tay gần nhất “Lạm phát là gì? Cheems giải thích” (23-10). Nếu người yêu cầu sửa, AI làm lại bước đó: video làm tay này tốn $5,55 giá API vì nhiều vòng sửa và thử nghiệm.</p>
 <p class="callout">Số đo lấy từ các video Vượn đã làm theo quy trình cũ (trước 22/10). Quy trình mới thêm bước chọn ý tưởng và duyệt phác thảo trước khi làm ảnh, nhằm giảm số vòng sửa ở bản xem thử.</p>
 <div class="subtabs" role="tablist"><button role="tab" aria-selected="true" data-sub="proc">Quy trình &amp; đầu ra từng bước</button><button role="tab" aria-selected="false" data-sub="cost">Bóc tách thời gian &amp; chi phí</button></div>
 <div class="subpane on" data-subpane="proc"><div class="proc"><ol class="steps-list"><li class="step"><span class="no-c ai">01</span><div>
@@ -448,18 +451,18 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">02</span> <b>Kịch bản</b> <span class="tag gate">có duyệt</span>
 <small>Claude Opus 5.5 · lint</small><small class="note">Chi phí chủ yếu là token Claude: đọc hướng dẫn, nguồn và viết lời.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">26 giây</td><td class="num" rowspan="1">1 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 21%,transparent)">8 phút</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">27k</td><td class="num" rowspan="1">134k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 27%,transparent)"><b>$0,27</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 27%,transparent)"><b>$0,05</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">26 giây</td><td class="num" rowspan="1">1 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">18 phút</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">27k</td><td class="num" rowspan="1">134k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 27%,transparent)"><b>$0,27</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 27%,transparent)"><b>$0,05</b></td>
 <td class="num g">0 đ</td></tr><tr><td><span class="n">03</span> <b>Phác thảo</b> <span class="tag gate">có duyệt</span>
 <small>build-sticker.mjs</small><small class="note">Dựng bằng chính bộ dựng sticker, chưa có giọng: chỉ tốn vài chục giây máy.</small>
 </td>
-<td class="num g" rowspan="1">11 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">4 phút</td><td class="num g" rowspan="1">1k</td><td class="num" rowspan="1">77k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,05</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
+<td class="num g" rowspan="1">11 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">1k</td><td class="num" rowspan="1">77k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,05</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
 <td class="num g">0 đ</td></tr><tr><td><span class="n">04</span> <b>Bổ sung sticker (nếu thiếu)</b>
 <small>ChatGPT (trong gói) · Gemini nếu chọn</small>
 <ul class="opts"><li><b>ChatGPT (làm tay)</b> · 0 đ <i>(trong gói ChatGPT)</i> · ≈ 17 phút người <i>· ước tính 1–2 phút/ảnh × 11 ảnh</i></li><li><b>Nano Banana (Gemini)</b> · $0,43 <i>(11.000 đ · $0.039/ảnh × 11 ảnh)</i> · ≈ 3 phút máy <i>· gọi API, báo giá trước</i></li><li><b>Dùng sticker có sẵn</b> · 0 đ · 0 phút <i>· thư viện dùng lại giữa các tập</i></li></ul></td>
-<td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">15 phút</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
+<td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 – $0,43<small>tuỳ nguồn ảnh</small></td></tr><tr><td><span class="n">05</span> <b>Giọng đọc</b> <span class="tag gate">có duyệt</span>
 <small>Chirp 3 HD · Whisper</small>
-<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 760 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 760 ký tự/video ≈ 1.315 video miễn phí/tháng</i></li></ul></td>
+<ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 746 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 746 ký tự/video ≈ 1.340 video miễn phí/tháng</i></li></ul></td>
 <td class="num g" rowspan="1">5 giây</td><td class="num" rowspan="1">3 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">1k</td><td class="num" rowspan="1">93k</td><td class="num" rowspan="1">1k</td><td class="num g" rowspan="1"><b>$0,04</b></td><td class="num" rowspan="1"><b>$0,01</b></td>
 <td class="num g">0 đ<small>trong hạn mức Chirp; vượt: $0,02</small></td></tr><tr><td><span class="n">06</span> <b>Bản xem thử</b> <span class="tag gate">có duyệt</span>
 <small>build-sticker.mjs · HyperFrames</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
@@ -474,8 +477,8 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 </td>
 <td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1"><b>$0,00</b></td><td class="num" rowspan="1"><b>$0,00</b></td>
 <td class="num g">0 đ<small>API YouTube miễn phí</small></td></tr></tbody>
-<tfoot><tr><td><b>Tổng 1 video</b><small>36 phút từ đầu đến cuối</small></td>
-<td class="num g">3 phút</td><td class="num">5 phút</td><td class="num">27 phút</td>
+<tfoot><tr><td><b>Tổng 1 video</b><small>26 phút từ đầu đến cuối</small></td>
+<td class="num g">3 phút</td><td class="num">5 phút</td><td class="num">18 phút</td>
 <td class="num g">66k</td><td class="num">2 tr</td><td class="num">21k</td>
 <td class="num g"><b>$1,34</b><small>35.000 đ</small></td><td class="num"><b>$0,27</b><small>7.000 đ</small></td>
 <td class="num g">0 đ<small>$0,02 nếu vượt hạn mức Chirp; thêm phí ảnh nếu chọn Nano Banana</small></td></tr></tfoot></table></div>
@@ -488,8 +491,8 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <div><span>1 gói làm được</span><b>742 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Google Chirp 3 HD <small>vi-VN-Chirp3-HD-Algenib</small></h4><div class="vgrid">
-<div><span>Ký tự lời đọc / video</span><b>760</b><small>trung bình 5 video, tính cả dấu cách</small></div>
-<div><span>Miễn phí mỗi tháng</span><b>1 triệu ký tự</b><small>≈ 1.315 video loại này</small></div>
+<div><span>Ký tự lời đọc / video</span><b>746</b><small>trung bình 7 video, tính cả dấu cách</small></div>
+<div><span>Miễn phí mỗi tháng</span><b>1 triệu ký tự</b><small>≈ 1.340 video loại này</small></div>
 <div><span>Vượt hạn mức</span><b>$0,02/video</b><small>1.000 đ · giá $30/1 triệu ký tự</small></div>
 <div><span>Bước giọng đọc đã chạy</span><b>7 lần</b><small>ở video mẫu. Lần nào lời thay đổi thì tạo giọng mới và tính thêm ký tự.</small></div>
 </div></div>
@@ -500,7 +503,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <li><b>Máy chạy:</b> từ lúc AI gọi một lệnh tới lúc lệnh trả kết quả, ví dụ tải footage, tạo giọng đọc, dựng bản xem thử, xuất file.</li>
 <li><b>Người:</b> từ lúc AI dừng lại chờ tới lúc người gửi tin nhắn tiếp theo (đọc kịch bản, xem bản nháp, góp ý, bấm duyệt). Mỗi lần tính tối đa 15 phút để không cộng giờ nghỉ. Đây là thời gian phản hồi, có thể gồm cả lúc người làm việc khác.</li>
 </ul>
-<p>Giai đoạn được nhận ra theo lệnh AI chạy trong khoảng đó (ví dụ lệnh tạo giọng → Giọng đọc). Số tin nhắn người gửi trung bình mỗi video: 12.</p>
+<p>Giai đoạn được nhận ra theo lệnh AI chạy trong khoảng đó (ví dụ lệnh tạo giọng → Giọng đọc). Số tin nhắn người gửi trung bình mỗi video: 3.</p>
 </details></div></div>
 </section>
 <section id="sticker-ceo" class="fmt page" data-page="sticker-ceo">
@@ -726,11 +729,11 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <a href="https://www.tiktok.com/@wed5ngaytriky/video/7419254062287211792" target="_blank" rel="noopener">Mở trên TikTok ↗</a></figure>
 </div>
 <div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-tab="handdrawn-auto">Tự động (không duyệt)</button><button role="tab" aria-selected="false" data-tab="handdrawn-review">Duyệt tay từng bước</button></div><div class="tabpane on" data-tabpane="handdrawn-auto"><div class="kpis five">
-<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,37</b><small>10.000 đ · khấu hao gói</small></div>
-<div class="kpi"><span>Nếu trả theo API</span><b>$1,84</b><small>49.000 đ · <span class="tag est">Ước tính</span></small></div>
+<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,38</b><small>10.000 đ · khấu hao gói</small></div>
+<div class="kpi"><span>Nếu trả theo API</span><b>$1,87</b><small>49.000 đ · <span class="tag est">Ước tính</span></small></div>
 <div class="kpi"><span>Tổng thời gian</span><b>4 phút</b><small>AI 3 phút · máy 1 phút</small></div>
 <div class="kpi"><span>Người phải làm</span><b>0 phút</b><small>không có điểm duyệt</small></div>
-<div class="kpi"><span>1 gói làm được</span><b>540</b><small>video / tháng</small></div>
+<div class="kpi"><span>1 gói làm được</span><b>531</b><small>video / tháng</small></div>
 </div>
 <p class="muted small">Chi phí AI, thời gian AI lấy từ video gần nhất: “Lạm phát: Vì sao cùng số tiền mua được ít hơn?” (23-10). Thời gian máy đo bằng một lần chạy tự động lại ngày 23-10: giọng đọc chirp 18 giây, dựng + xuất mp4 59 giây. Chưa gồm bước vẽ nét whiteboard (dùng lại clip đã vẽ).</p>
 <p class="callout">Ước tính khi chạy chế độ auto của dự án: các điểm dừng được duyệt theo chính sách dự án (không tự gọi dịch vụ tính phí), người chỉ xem video cuối. Lấy thời gian AI và máy của video gần nhất, bỏ thời gian chờ người.</p>
@@ -766,7 +769,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">02</span> <b>Kịch bản</b>
 <small>Claude Opus 5.5 · lint</small><small class="note">Chi phí chủ yếu là token Claude: đọc hướng dẫn, nguồn và viết lời.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">16 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">50k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">330k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,54</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">16 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">50k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">330k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,55</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ</td></tr><tr><td><span class="n">03</span> <b>Phác khung</b>
 <small>storyboard.json</small>
 </td>
@@ -774,7 +777,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">04</span> <b>Vẽ tranh</b>
 <small>ChatGPT (trong gói) · stroke-plan</small>
 <ul class="opts"><li><b>ChatGPT (làm tay)</b> · 0 đ <i>(trong gói ChatGPT)</i> · ≈ 9 phút người <i>· ước tính 1–2 phút/ảnh × 6 ảnh</i></li><li><b>Nano Banana (Gemini)</b> · $0,23 <i>(6.000 đ · $0.039/ảnh × 6 ảnh)</i> · ≈ 2 phút máy <i>· gọi API, báo giá trước</i></li><li><b>Dùng sticker có sẵn</b> · 0 đ · 0 phút <i>· thư viện dùng lại giữa các tập</i></li></ul></td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">58 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">17k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 49%,transparent)"><b>$0,49</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 49%,transparent)"><b>$0,10</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">58 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">17k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 50%,transparent)"><b>$0,50</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 50%,transparent)"><b>$0,10</b></td>
 <td class="num g">0 – $0,23<small>tuỳ nguồn ảnh</small></td></tr><tr><td><span class="n">05</span> <b>Giọng đọc</b>
 <small>Chirp 3 HD · Whisper</small>
 <ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 637 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 637 ký tự/video ≈ 1.569 video miễn phí/tháng</i></li></ul></td>
@@ -782,7 +785,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ<small>trong hạn mức Chirp; vượt: $0,02</small></td></tr><tr><td><span class="n">06</span> <b>Vẽ nét &amp; dựng</b>
 <small>whiteboard (Python) · HyperFrames</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 36%,transparent)">43 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">59 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">13k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 35%,transparent)">879k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)">4k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,35</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,07</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 36%,transparent)">43 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">59 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">13k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 35%,transparent)">879k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)">4k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,36</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,07</b></td>
 <td class="num g">0 đ<small>chạy trên máy cá nhân</small></td></tr><tr><td><span class="n">07</span> <b>Kiểm tra chất lượng</b>
 <small>Claude · dsc-qa</small><small class="note">AI xem khung hình trích bằng FFmpeg và đo âm lượng (EBU R128).</small>
 </td>
@@ -795,15 +798,15 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <tfoot><tr><td><b>Tổng 1 video</b><small>4 phút từ đầu đến cuối</small></td>
 <td class="num g">3 phút</td><td class="num">1 phút</td><td class="num">—</td>
 <td class="num g">100k</td><td class="num">3,3 tr</td><td class="num">17k</td>
-<td class="num g"><b>$1,84</b><small>49.000 đ</small></td><td class="num"><b>$0,37</b><small>10.000 đ</small></td>
+<td class="num g"><b>$1,87</b><small>49.000 đ</small></td><td class="num"><b>$0,38</b><small>10.000 đ</small></td>
 <td class="num g">0 đ<small>$0,02 nếu vượt hạn mức Chirp; thêm phí ảnh nếu chọn Nano Banana</small></td></tr></tfoot></table></div>
 <p class="muted small"><b>Chi phí AI</b> ở mỗi bước là tiền token Claude tiêu trong lúc AI làm bước đó (đọc, viết, chạy lệnh, kiểm tra kết quả), không phải tiền của dịch vụ (giọng đọc, ảnh); tiền dịch vụ nằm ở cột “Dịch vụ ngoài”. Việc nghiên cứu đối thủ, sửa công cụ trong cùng phiên được tách sang chi phí xây công cụ.</p>
 <div class="amort">
 <div><span>Gói Claude</span><b>$200/tháng</b></div><i>→</i>
 <div><span>Dùng được ≈</span><b>$997</b><small>giá API / tháng</small></div><i>→</i>
 <div><span>1 USD giá API thực trả</span><b>$0,20</b></div><i>→</i>
-<div><span>Video này theo gói</span><b>$0,37</b><small>10.000 đ</small></div><i>→</i>
-<div><span>1 gói làm được</span><b>540 video</b><small>/tháng nếu chỉ làm loại này</small></div>
+<div><span>Video này theo gói</span><b>$0,38</b><small>10.000 đ</small></div><i>→</i>
+<div><span>1 gói làm được</span><b>531 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Google Chirp 3 HD <small>vi-VN-Chirp3-HD-Algenib</small></h4><div class="vgrid">
 <div><span>Ký tự lời đọc / video</span><b>637</b><small>trung bình 1 video, tính cả dấu cách</small></div>
@@ -820,11 +823,11 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 </ul>
 <p>Giai đoạn được nhận ra theo lệnh AI chạy trong khoảng đó (ví dụ lệnh tạo giọng → Giọng đọc). Số tin nhắn người gửi trung bình mỗi video: 2.</p>
 </details></div></div><div class="tabpane" data-tabpane="handdrawn-review"><div class="kpis five">
-<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,37</b><small>10.000 đ · khấu hao gói</small></div>
-<div class="kpi"><span>Nếu trả theo API</span><b>$1,84</b><small>49.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
+<div class="kpi hl"><span>Chi phí thực / video</span><b>$0,38</b><small>10.000 đ · khấu hao gói</small></div>
+<div class="kpi"><span>Nếu trả theo API</span><b>$1,87</b><small>49.000 đ · <span class="tag ok">Đo thật · video 23-10</span></small></div>
 <div class="kpi"><span>Tổng thời gian</span><b>4 phút</b><small>AI 3 phút · máy 1 phút</small></div>
 <div class="kpi"><span>Người phải làm</span><b>chưa đo</b><small>7 điểm dừng chờ người</small></div>
-<div class="kpi"><span>1 gói làm được</span><b>540</b><small>video / tháng</small></div>
+<div class="kpi"><span>1 gói làm được</span><b>531</b><small>video / tháng</small></div>
 </div>
 <p class="muted small">Chi phí AI, thời gian AI và người lấy từ video gần nhất: “Lạm phát: Vì sao cùng số tiền mua được ít hơn?” (23-10). Thời gian máy đo bằng một lần chạy tự động lại ngày 23-10: giọng đọc chirp 18 giây, dựng + xuất mp4 59 giây. Chưa gồm bước vẽ nét whiteboard (dùng lại clip đã vẽ). <b>Chưa có video kiểu này làm tay có người duyệt, nên chưa đo được thời gian duyệt; tổng thời gian ở đây chưa gồm phần người.</b></p>
 <p class="callout">Mới đo 1 video, làm khi bộ dựng đã sẵn và trước khi có quy trình v2 (ý tưởng → phác thảo). Nên coi là mức thấp nhất.</p>
@@ -867,7 +870,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">02</span> <b>Kịch bản</b> <span class="tag gate">có duyệt</span>
 <small>Claude Opus 5.5 · lint</small><small class="note">Chi phí chủ yếu là token Claude: đọc hướng dẫn, nguồn và viết lời.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">16 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">50k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">330k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,54</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">16 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">50k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 7%,transparent)">330k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 11%,transparent)">2k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,55</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)"><b>$0,11</b></td>
 <td class="num g">0 đ</td></tr><tr><td><span class="n">03</span> <b>Phác khung</b> <span class="tag gate">có duyệt</span>
 <small>storyboard.json</small>
 </td>
@@ -875,7 +878,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ</td></tr><tr><td><span class="n">04</span> <b>Vẽ tranh</b> <span class="tag gate">có duyệt</span>
 <small>ChatGPT (trong gói) · stroke-plan</small>
 <ul class="opts"><li><b>ChatGPT (làm tay)</b> · 0 đ <i>(trong gói ChatGPT)</i> · ≈ 9 phút người <i>· ước tính 1–2 phút/ảnh × 6 ảnh</i></li><li><b>Nano Banana (Gemini)</b> · $0,23 <i>(6.000 đ · $0.039/ảnh × 6 ảnh)</i> · ≈ 2 phút máy <i>· gọi API, báo giá trước</i></li><li><b>Dùng sticker có sẵn</b> · 0 đ · 0 phút <i>· thư viện dùng lại giữa các tập</i></li></ul></td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">58 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">17k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 49%,transparent)"><b>$0,49</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 49%,transparent)"><b>$0,10</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">58 giây</td><td class="num" rowspan="1">—</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 10%,transparent)">17k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">1,2 tr</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">6k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 50%,transparent)"><b>$0,50</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 50%,transparent)"><b>$0,10</b></td>
 <td class="num g">0 – $0,23<small>tuỳ nguồn ảnh</small></td></tr><tr><td><span class="n">05</span> <b>Giọng đọc</b> <span class="tag gate">có duyệt</span>
 <small>Chirp 3 HD · Whisper</small>
 <ul class="opts"><li><b>Edge TTS</b> · 0 đ <i>(không giới hạn)</i> · vài giây máy <i>· 637 ký tự/video</i></li><li><b>Chirp 3 HD</b> · 0 đ trong hạn mức <i>(vượt 1 triệu ký tự/tháng: $0,02/video)</i> · vài giây máy <i>· 637 ký tự/video ≈ 1.569 video miễn phí/tháng</i></li></ul></td>
@@ -883,7 +886,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <td class="num g">0 đ<small>trong hạn mức Chirp; vượt: $0,02</small></td></tr><tr><td><span class="n">06</span> <b>Vẽ nét &amp; dựng</b> <span class="tag gate">có duyệt</span>
 <small>whiteboard (Python) · HyperFrames</small><small class="note">HyperFrames (dựng HTML + chuyển động, render bằng Chrome trên máy) và FFmpeg (trộn giọng, nhạc, tiếng động, nén MP4). Không tốn phí.</small>
 </td>
-<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 36%,transparent)">43 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">59 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">13k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 35%,transparent)">879k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)">4k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,35</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,07</b></td>
+<td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 36%,transparent)">43 giây</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 58%,transparent)">59 giây</td><td class="num" rowspan="1">—</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 6%,transparent)">13k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 35%,transparent)">879k</td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)">4k</td><td class="num g" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,36</b></td><td class="num" rowspan="1" style="background:color-mix(in srgb,var(--heat) 29%,transparent)"><b>$0,07</b></td>
 <td class="num g">0 đ<small>chạy trên máy cá nhân</small></td></tr><tr><td><span class="n">07</span> <b>Kiểm tra chất lượng</b>
 <small>Claude · dsc-qa</small><small class="note">AI xem khung hình trích bằng FFmpeg và đo âm lượng (EBU R128).</small>
 </td>
@@ -896,15 +899,15 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <tfoot><tr><td><b>Tổng 1 video</b><small>4 phút từ đầu đến cuối</small></td>
 <td class="num g">3 phút</td><td class="num">1 phút</td><td class="num">—</td>
 <td class="num g">100k</td><td class="num">3,3 tr</td><td class="num">17k</td>
-<td class="num g"><b>$1,84</b><small>49.000 đ</small></td><td class="num"><b>$0,37</b><small>10.000 đ</small></td>
+<td class="num g"><b>$1,87</b><small>49.000 đ</small></td><td class="num"><b>$0,38</b><small>10.000 đ</small></td>
 <td class="num g">0 đ<small>$0,02 nếu vượt hạn mức Chirp; thêm phí ảnh nếu chọn Nano Banana</small></td></tr></tfoot></table></div>
 <p class="muted small"><b>Chi phí AI</b> ở mỗi bước là tiền token Claude tiêu trong lúc AI làm bước đó (đọc, viết, chạy lệnh, kiểm tra kết quả), không phải tiền của dịch vụ (giọng đọc, ảnh); tiền dịch vụ nằm ở cột “Dịch vụ ngoài”. Việc nghiên cứu đối thủ, sửa công cụ trong cùng phiên được tách sang chi phí xây công cụ.</p>
 <div class="amort">
 <div><span>Gói Claude</span><b>$200/tháng</b></div><i>→</i>
 <div><span>Dùng được ≈</span><b>$997</b><small>giá API / tháng</small></div><i>→</i>
 <div><span>1 USD giá API thực trả</span><b>$0,20</b></div><i>→</i>
-<div><span>Video này theo gói</span><b>$0,37</b><small>10.000 đ</small></div><i>→</i>
-<div><span>1 gói làm được</span><b>540 video</b><small>/tháng nếu chỉ làm loại này</small></div>
+<div><span>Video này theo gói</span><b>$0,38</b><small>10.000 đ</small></div><i>→</i>
+<div><span>1 gói làm được</span><b>531 video</b><small>/tháng nếu chỉ làm loại này</small></div>
 </div>
 <div class="voicebox"><h4>Giọng đọc: Google Chirp 3 HD <small>vi-VN-Chirp3-HD-Algenib</small></h4><div class="vgrid">
 <div><span>Ký tự lời đọc / video</span><b>637</b><small>trung bình 1 video, tính cả dấu cách</small></div>
@@ -1137,7 +1140,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <tr data-key="news-auto"><td>Tin tức · tự động</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video Tin tức · tự động mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="news-review"><td>Tin tức · có duyệt</td><td><input type="number" min="0" max="500" value="60" aria-label="Số video Tin tức · có duyệt mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="sticker-auto"><td>Giải thích (sticker) · tự động</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video Giải thích (sticker) · tự động mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="sticker-review"><td>Giải thích (sticker) · có duyệt</td><td><input type="number" min="0" max="500" value="8" aria-label="Số video Giải thích (sticker) · có duyệt mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="sticker-ceo-auto"><td>So sánh A–B (sticker) · tự động</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video So sánh A–B (sticker) · tự động mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="sticker-ceo-review"><td>So sánh A–B (sticker) · có duyệt</td><td><input type="number" min="0" max="500" value="4" aria-label="Số video So sánh A–B (sticker) · có duyệt mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="handdrawn-auto"><td>Vẽ tay · tự động</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video Vẽ tay · tự động mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="handdrawn-review"><td>Vẽ tay · có duyệt</td><td><input type="number" min="0" max="500" value="4" aria-label="Số video Vẽ tay · có duyệt mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="essay-auto"><td>Phân tích (Vox) · tự động</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video Phân tích (Vox) · tự động mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr><tr data-key="essay-review"><td>Phân tích (Vox) · có duyệt</td><td><input type="number" min="0" max="500" value="0" aria-label="Số video Phân tích (Vox) · có duyệt mỗi tháng"></td><td class="num c-usd"></td><td class="num c-h"></td><td class="num c-w"></td></tr>
 </tbody><tfoot><tr><td><b>Tổng / tháng</b></td><td class="t-n"></td><td class="num t-usd"></td><td class="num t-h"></td><td class="num t-w"></td></tr></tfoot></table></div>
 <div class="kpis three" id="plan-kpis"></div>
-<script>const PLAN={"data":[{"key":"news-auto","name":"Tin tức · tự động","usd":1.2714248000000004,"wall":8.40515,"human":0,"n":0},{"key":"news-review","name":"Tin tức · có duyệt","usd":1.2714248000000004,"wall":8.40515,"human":3,"n":60},{"key":"sticker-auto","name":"Giải thích (sticker) · tự động","usd":1.3430446000000003,"wall":8.638616666666666,"human":0,"n":0},{"key":"sticker-review","name":"Giải thích (sticker) · có duyệt","usd":1.3430446000000003,"wall":8.638616666666666,"human":26.9558,"n":8},{"key":"sticker-ceo-auto","name":"So sánh A–B (sticker) · tự động","usd":8.986179502721985,"wall":13.438283333333334,"human":0,"n":0},{"key":"sticker-ceo-review","name":"So sánh A–B (sticker) · có duyệt","usd":8.986179502721985,"wall":13.438283333333334,"human":25.036199999999997,"n":4},{"key":"handdrawn-auto","name":"Vẽ tay · tự động","usd":1.8447701828410952,"wall":4.218166666666667,"human":0,"n":0},{"key":"handdrawn-review","name":"Vẽ tay · có duyệt","usd":1.8447701828410952,"wall":4.218166666666667,"human":0,"n":4},{"key":"essay-auto","name":"Phân tích (Vox) · tự động","usd":2.523711386406574,"wall":13.39118333333333,"human":0,"n":0},{"key":"essay-review","name":"Phân tích (Vox) · có duyệt","usd":2.523711386406574,"wall":13.39118333333333,"human":0,"n":0}],"capMonth":996.6666666666666,"rate":26300,"sub":200};</script>
+<script>const PLAN={"data":[{"key":"news-auto","name":"Tin tức · tự động","usd":1.6369725000000002,"wall":13.506983333333334,"human":0,"n":0},{"key":"news-review","name":"Tin tức · có duyệt","usd":1.6369725000000002,"wall":13.506983333333334,"human":3,"n":60},{"key":"sticker-auto","name":"Giải thích (sticker) · tự động","usd":1.3430446000000003,"wall":8.638616666666666,"human":0,"n":0},{"key":"sticker-review","name":"Giải thích (sticker) · có duyệt","usd":1.3430446000000003,"wall":8.638616666666666,"human":17.6089,"n":8},{"key":"sticker-ceo-auto","name":"So sánh A–B (sticker) · tự động","usd":8.986179502721985,"wall":13.438283333333334,"human":0,"n":0},{"key":"sticker-ceo-review","name":"So sánh A–B (sticker) · có duyệt","usd":8.986179502721985,"wall":13.438283333333334,"human":25.036199999999997,"n":4},{"key":"handdrawn-auto","name":"Vẽ tay · tự động","usd":1.8741308744628935,"wall":4.218166666666667,"human":0,"n":0},{"key":"handdrawn-review","name":"Vẽ tay · có duyệt","usd":1.8741308744628935,"wall":4.218166666666667,"human":0,"n":4},{"key":"essay-auto","name":"Phân tích (Vox) · tự động","usd":2.523711386406574,"wall":13.39118333333333,"human":0,"n":0},{"key":"essay-review","name":"Phân tích (Vox) · có duyệt","usd":2.523711386406574,"wall":13.39118333333333,"human":0,"n":0}],"capMonth":996.6666666666666,"rate":26300,"sub":200};</script>
 <h3>Dịch vụ ngoài AI</h3>
 <div class="tablewrap"><table><thead><tr><th>Công cụ</th><th class="num">Đơn giá</th><th>Ghi chú</th></tr></thead><tbody>
 <tr><td>Giọng đọc Chirp 3 HD (Google Cloud)</td><td class="num">$30 / 1 triệu ký tự<small>miễn phí 1 triệu ký tự/tháng</small></td><td class="muted">cloud.google.com/text-to-speech/pricing: miễn phí 1 triệu ký tự/tháng cho giọng Chirp 3 HD, vượt mức tính $30/1 triệu ký tự (tính cả dấu cách). Kiểm tra 22/10/2026.</td></tr><tr><td>Giọng đọc Edge TTS</td><td class="num">0 đ</td><td class="muted">Miễn phí, không giới hạn ký tự. Kênh Tin tài chính 60 giây đang dùng giọng này.</td></tr><tr><td>Nhạc Lyria (Vertex AI)</td><td class="num">$0,06 / clip ~30 giây</td><td class="muted">scripts/audio.mjs — chỉ chạy khi bật --api</td></tr><tr><td>Nhạc thư viện (Mixkit/Pixabay)</td><td class="num">0 đ</td><td class="muted">assets/audio/catalog.json</td></tr><tr><td>Ảnh ChatGPT (làm tay)</td><td class="num">0 đ</td><td class="muted">Nằm trong gói ChatGPT hiện có; người dán prompt, tải ảnh về. Ước tính 1–2 phút người mỗi ảnh.</td></tr><tr><td>Ảnh Nano Banana (Gemini 2.5 Flash Image, Vertex AI)</td><td class="num">$0,04 / ảnh</td><td class="muted">scripts/lib/workflow-review.mjs (PRICES.geminiImageUsd). Máy tự tạo, khoảng 15 giây mỗi ảnh; báo giá và chờ đồng ý trước khi gọi.</td></tr><tr><td>Whisper (phụ đề, chạy trên máy)</td><td class="num">0 đ</td><td class="muted">scripts/lib/align.mjs</td></tr><tr><td>Dựng video HyperFrames + FFmpeg (trên máy)</td><td class="num">0 đ</td><td class="muted">Máy cá nhân</td></tr><tr><td>Đăng YouTube / Telegram</td><td class="num">0 đ</td><td class="muted">Hạn mức API miễn phí</td></tr>
@@ -1147,7 +1150,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 <header class="sh"><h2>Cách tính &amp; giới hạn dữ liệu</h2><span class="pg">09</span></header>
 <ul class="method">
 <li><b>Quy trình:</b> theo quy trình hiện hành trong repo (workflows/production.md, workflow v2 từ 22/10 cho video mới của DSC Academy; skill dsc-news cho tin). Số đo lấy từ các video đã làm, phần lớn theo quy trình cũ.</li>
-<li><b>Token, chi phí, thời gian:</b> từ nhật ký 55 phiên làm việc của Claude Code. Mỗi phiên được gán cho video được nhắc tới nhiều nhất; phiên không gắn với video nào được tính là "xây công cụ".</li>
+<li><b>Token, chi phí, thời gian:</b> từ nhật ký 60 phiên làm việc của Claude Code. Mỗi phiên được gán cho video được nhắc tới nhiều nhất; phiên không gắn với video nào được tính là "xây công cụ".</li>
 <li><b>Thời gian máy:</b> đo bằng cách chạy lại tự động các lệnh dựng trên bản sao của video mẫu (scripts/report/bench-auto.mjs): tải footage, phác thảo, giọng đọc, dựng và xuất MP4, mỗi bước một lần, không có lần chạy lại hay sửa lỗi. Bản sao bị xoá sau khi đo, không đăng.</li>
 <li><b>Thời gian AI:</b> một lượt AI dài quá 5 phút được tính 5 phút (đó là lúc chờ API, không phải AI đang làm việc).</li>
 <li><b>Video tham chiếu số liệu:</b> mỗi định dạng lấy video gần nhất (các video sau đã tối ưu quy trình), ghi tên và ngày ngay dưới các thẻ số. Tin tức “có duyệt hình” = video tự động gần nhất + 3 phút duyệt hình (ước tính). Tab “Tự động” của các định dạng khác là ước tính: lấy thời gian AI và máy của video gần nhất, bỏ thời gian chờ người.</li>
@@ -1161,7 +1164,7 @@ footer{max-width:1120px;margin:0 auto;padding:16px 48px 48px;border-top:1px soli
 </ul>
 </section>
 </main>
-<footer><span>DSC Academy · Báo cáo sản xuất video</span><span>Dựng 07:41:22 23/10/2026</span></footer>
+<footer><span>DSC Academy · Báo cáo sản xuất video</span><span>Dựng 14:01:44 23/10/2026</span></footer>
 <script>
 (()=>{
  const f=(n,d=0)=>Number(n).toLocaleString('vi-VN',{maximumFractionDigits:d});
